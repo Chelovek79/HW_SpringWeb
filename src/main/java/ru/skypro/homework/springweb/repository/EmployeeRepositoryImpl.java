@@ -41,6 +41,11 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
     }
 
     @Override
+    public void createNewOne(Employee employee) {
+        employeeList.add(employee);
+    }
+
+    @Override
     public void changeEmployeeById(int id, Employee employee) {
         haveIdOrNot(id);
         employeeList.stream()

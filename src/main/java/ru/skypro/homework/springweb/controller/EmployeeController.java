@@ -25,9 +25,14 @@ public class EmployeeController {
         return employeeService.getAllEmployeeHaveSalaryHigher(salary);
     }
 
-    @PostMapping("/")
+    @PostMapping("/addList/")
     public void createNewEmployees(@RequestBody List<Employee> employees) {
         employeeService.createNewEmployees(employees);
+    }
+
+    @PostMapping("/addOne/")
+    public void createNewOne(@RequestBody Employee employee) {
+        employeeService.createNewOne(employee);
     }
 
     @PutMapping("/{id}")

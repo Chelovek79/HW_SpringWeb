@@ -12,6 +12,8 @@ public interface EmployeeService {
 
     void createNewEmployees(List<Employee> employees);
 
+    void createNewOne (Employee employee);
+
     void changeEmployeeById(int id, Employee employee);
 
     void deletingEmployeeById(int id);

@@ -31,6 +31,11 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
+    public void createNewOne(Employee employee) {
+        employeeRepository.createNewOne(employee);
+    }
+
+    @Override
     public void changeEmployeeById(int id, Employee employee) {
         employeeRepository.changeEmployeeById(id, employee);
     }
